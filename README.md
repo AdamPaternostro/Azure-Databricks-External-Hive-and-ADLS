@@ -13,7 +13,7 @@ Shows how to use an External Hive (SQL Server) along with ADLS Gen 1 as part of 
     * You can create an HDI Cluster and let that create your metastore
     * Please check your Hive version and update the external-metastore.sh
     * The external-metastore.sh tells Databricks not to check the schema (validation)
-8. Upload the external metastore (run the lines below)
+8. Upload the external metastore (run the lines below, you can run over and over if you'd like)
 
 ```
 dbfs mkdirs dbfs:/databricks/init/
