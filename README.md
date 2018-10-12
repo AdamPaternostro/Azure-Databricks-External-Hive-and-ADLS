@@ -26,7 +26,7 @@ dbfs cp external-metastore.sh dbfs:/databricks/init/external-metastore.sh
 This assume you have a file (CSV to view or just do a directory listing)
 ```
 %scala
-dbutils.fs.ls("adl://YOUR-DATA-LAKE-HERE.azuredatalakestore.net/states")
+dbutils.fs.ls("adl://YOUR-DATA-LAKE-HERE.azuredatalakestore.net/DIRECTORY-PATH")
 val df = spark.read.text("adl://YOUR-DATA-LAKE-HERE.azuredatalakestore.net/DIRECTORY-PATH/SAMPLE-FILE.csv")
 df.show()
 ```
