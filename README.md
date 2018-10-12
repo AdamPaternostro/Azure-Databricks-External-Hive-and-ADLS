@@ -22,7 +22,7 @@ dbfs cp external-metastore.sh dbfs:/databricks/init/external-metastore.sh
 ```
 
 
-### To Test ADLS (run this in notebook)
+### To Test ADLS (run this in a notebook)
 This assume you have a file (CSV to view or just do a directory listing)
 ```
 %scala
@@ -31,7 +31,7 @@ val df = spark.read.text("adl://YOUR-DATA-LAKE-HERE.azuredatalakestore.net/DIREC
 df.show()
 ```
 
-### To Test External Hive (run this in notebook)
+### To Test External Hive (run this in a notebook)
 ```
 %sql
 show tables;
@@ -40,3 +40,4 @@ show tables;
 
 ### Reference
 https://docs.databricks.com/user-guide/advanced/external-hive-metastore.html
+https://docs.databricks.com/spark/latest/data-sources/azure/azure-datalake.html
