@@ -9,10 +9,11 @@ Shows how to use an External Hive (SQL Server) along with ADLS Gen 1 as part of 
 5. Download Databricks CLI https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html
 6. Configure CLI ```databricks configure --token```
 7. Update the values in the external-metastore.sh
-  * This assumes you have a Hive metastore in SQL Server, a ADLS Gen 1 account and a Service Principle
-  * You can create an HDI Cluster and let that create your metastore
-  * Please check your Hive version and update the external-metastore.sh
-  * The external-metastore.sh tells Databricks not to check the schema (validation)
+    * This assumes you have a Hive metastore in SQL Server, a ADLS Gen 1 account and a Service Principle
+    * You can create an HDI Cluster and let that create your metastore
+    * Please check your Hive version and update the external-metastore.sh
+    * The external-metastore.sh tells Databricks not to check the schema (validation)
+  
 8. Upload the external metastore (run the lines below)
 
 ```
