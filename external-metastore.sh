@@ -15,6 +15,6 @@ cat << 'EOF' > /databricks/driver/conf/00-custom-spark.conf
     "spark.hadoop.dfs.adls.oauth2.access.token.provider.type" = "ClientCredential"
     "spark.hadoop.dfs.adls.oauth2.client.id" = "REPLACE-ME"
     "spark.hadoop.dfs.adls.oauth2.credential" = "REPLACE-ME"
-    "spark.hadoop.dfs.adls.oauth2.refresh.url " = "https://login.microsoftonline.com/REPLACE-ME-SUBSCRIPTION-ID/oauth2/token"
+    "spark.hadoop.dfs.adls.oauth2.refresh.url " = "https://login.microsoftonline.com/REPLACE-ME-TENANT-ID/oauth2/token"
     }
 EOF
